@@ -20,7 +20,7 @@ const limiter = rateLimiter({
   legacyHeaders: false,
 });
 app.use((req, res, next) => {
-  res.setHeader('Content-Security-Policy', "frame-ancestors 'self' https://invoice0.mernsolution.com/");
+  res.setHeader('Content-Security-Policy', "frame-ancestors 'self' http://localhost:5000");
   next();
 });
 
