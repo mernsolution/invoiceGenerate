@@ -124,7 +124,7 @@ function App() {
     } else {
       setDuration("0 Days");
     }
-  }, []);
+  }, [selectedPickupDate, selectedReturnDate]);
 
   useEffect(() => {
     if (invoiceData.length > 0 && selectedMake) {
@@ -137,7 +137,7 @@ function App() {
         setObjectData(selectedCar);
       }
     }
-  }, []);
+  }, [selectedMake, invoiceData]);
 
   const handleMakeChange = (event) => {
     setSelectedMake(event.target.value);
@@ -257,10 +257,9 @@ function App() {
                 </div>
                 <div className="item-section-body">
                   <div className="pt-1">
-                    <label className="form-label" for="id">Reservation ID</label>
+                    <label className="form-label">Reservation ID</label>
                     <input
                       type="text"
-                      id="id"
                       value={reservationID}
                       onChange={reservationIDHandle}
                       className="form-control "
@@ -319,11 +318,9 @@ function App() {
                     <h2>{duration}</h2>
                   </div>
                   <div className="pt-3">
-                    <label className="form-label" id="discount">Discount</label>
+                    <label className="form-label">Discount</label>
                     <input
                       type="text"
-                      name="discount"
-                      id="discount"
                       value={discountValue}
                       onChange={discountHandler}
                       className="form-control "
@@ -389,52 +386,49 @@ function App() {
                 </div>
                 <div className="item-section-body">
                   <div className="pt-1">
-                    
-                    <label className="form-label" for="firstName">First Name<span>*</span></label>
+                    <label className="form-label">
+                      First Name <span>*</span>
+                    </label>
                     <input
                       type="text"
                       className="form-control"
                       name="firstName"
-                      id="firstName"
                       value={formData.firstName}
                       onChange={handleInputChange}
                     />
                   </div>
                   <div className="pt-3">
-                    <label className="form-label" for="lastName">
+                    <label className="form-label">
                       Last Name <span>*</span>
                     </label>
                     <input
                       type="text"
                       className="form-control"
                       name="lastName"
-                      id="lastName"
                       value={formData.lastName}
                       onChange={handleInputChange}
                     />
                   </div>
                   <div className="pt-3">
-                    <label className="form-label" for="email">
+                    <label className="form-label">
                       Email <span>*</span>
                     </label>
                     <input
                       type="email"
                       className="form-control"
                       name="email"
-                      id="email"
                       value={formData.email}
                       onChange={handleInputChange}
                     />
                   </div>
                   <div className="pt-3">
-                    <label className="form-label" for="phone">
+                    <label className="form-label">
                       Phone <span>*</span>
                     </label>
                     <input
-                      type="number"
+                      type="tel"
                       className="form-control"
                       name="phone"
-                      id="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
                     />
