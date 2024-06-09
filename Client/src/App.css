@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: Poppins;
+  background: rgb(228, 228, 228);
+}
+.invoice-section {
+  padding-top: 51px;
+  padding-bottom: 50px;
+}
+/* invoice design section  css start */
+.invoice-top-title {
+  padding-top: 36px;
+  display: flex;
+  justify-content: space-between;
+}
+.invoice-top-title h2 {
+  font-weight: 700;
+  size: 24px;
+  line-height: 36px;
+}
+.invoice-top-title button {
+  background: #5d5cff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px 8px 16px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.container-area {
+  background: #fff;
+  padding-left: 71px;
+  padding-right: 71px;
+  padding-bottom: 30px;
+}
+
+/* item-section-reservation */
+.item-section-subtitle h2 {
+  padding-top: 36px;
+  border-bottom: 1px solid #5d5cff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #000000;
+  padding-bottom: 6px;
+}
+.item-section-body {
+  border: 1px solid #dfdfff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 35px;
+}
+.item-section-body span {
+  display: inline-flex;
+  color: red;
+  font-size: 20px;
+}
+.item-section-body .form-label {
+  font-size: 14px;
+  font-weight: 300;
+  color: #1b1b1b;
+}
+.item-section-body input {
+  border: 1px solid #dfdfff;
+}
+.reservation-Date {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #dfdfff;
+  border-radius: 5px;
+}
+.item-section-body .date-input-area {
+  border: none;
+  width: 300px;
+  outline: none;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.date-chat-icon svg {
+  margin-right: 10px;
+  margin-top: 7px;
+  font-size: 25px;
+  color: #1b1b1b;
+}
+.duration-area {
+  display: flex;
+  justify-content: space-between;
+}
+.duration-area h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #828290;
+  border: 1px solid #dfdfff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.Additional-Charges-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-check {
+  margin-right: 10px;
+}
+
+.form-label {
+  flex-grow: 1;
+  margin-right: auto;
+}
+
+h3.ms-2 {
+  margin-left: auto;
+  font-size: 14px;
+}
+.form-select {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+.vehicle-css {
+  color: rgb(15, 15, 15);
+  font-size: 14px;
+  font-weight: 400;
+}
+/* cul 3 css */
+.table thead th {
+  border-bottom: 1px solid #dee2e6fb;
+  font-weight: 600;
+  font-size: 14px;
+}
+.item-section-table-section {
+  border: 1px solid #dfdfff;
+  border-radius: 5px;
+  margin-top: 35px;
+}
+
+.table td {
+  font-size: 13px;
+}
+.table td,
+.table th {
+  white-space: nowrap;
+}
+
+/* Add a background color to the table */
+.table.custom-table {
+  --bs-table-bg: #dfdfff;
+  border-collapse: collapse;
+  margin-bottom: 0px;
+}
+.item-section-table-section {
+  border: 1px solid #5d5cff !important;
+  padding: 10px !important;
+  overflow: hidden;
+  background: #dfdfff;
+}
+.table.custom-table td,
+.table.custom-table th {
+  border: none;
+  white-space: nowrap;
+  padding-top: 20px;
+}
+
+.table.custom-table thead th {
+  border-bottom: 1px solid #5d5cff;
+}
+.table-total-css td {
+  font-weight: 600;
+}
+/* Home page css is end */
+
+/*This bellow css for download and  popup  section */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 100%;
+  max-width: 1300px;
+  overflow: hidden;
+  padding: 10px 50px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal-header h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.modal-header button {
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #5d5cff;
+  color: #fff;
+}
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.data-section {
+  width: 100%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.image-section-area-cart img {
+  width: 100%;
+}
+.image-section-area-cart h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.image-section-area-cart p {
+  font-size: 12px;
+  line-height: 0px;
+}
+.time-schedule-section p {
+  line-height: 0px;
+  font-size: 12px;
+}
+.time-schedule-section .schedule {
+  padding-top: 20px;
+}
+
+.reservation-section h2 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.reservation-section p {
+  font-size: 14px;
+  line-height: 0px;
+}
+
+.text-info-invoice h5 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.popup-section-table td,
+.popup-section-table th {
+  padding-top: 3px !important;
+}
+
+.popup-unite-area h2 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 20px;
+}
+
+.popup-unite-area p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 0px;
+}
+.popup-bling-area {
+  padding-top: 20px;
+}
+.popup-bling-area p {
+  font-size: 14px;
+  line-height: 0px;
+}
+
+.popup-rafael-area {
+  padding-top: 20px;
+}
+.popup-rafael-area p {
+  line-height: 20px;
+  font-size: 14px;
+}
+.popup-rafael-area-button {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.popup-rafael-area-button h3 {
+  font-size: 18px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.text-info-invoice {
+  padding-top: 20px;
+}
+.text-info-invoice p {
+  padding-top: 10px;
+}
+@media print {
+  .modal {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-content {
+    border: none;
+  }
+
+  .modal-body {
+    font-size: 12px !important;
+    padding-top: 20px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .modal-body p {
+    font-size: 12px !important;
+  }
+  .text-info-invoice h5 {
+    font-size: 12px !important;
+  }
+  .popup-rafael-area-button {
+    padding-top: 6px;
+  }
+  .text-info-invoice {
+    padding-top: 6px;
+  }
+  .text-info-invoice p {
+    padding-top: 5px;
+  }
+}
+
+/* media query  Responsive */
+@media only screen and (max-width: 576px) {
+  .invoice-top-title h2 {
+    font-size: 18px;
+  }
+  .button {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .button button {
+    font-size: 12px;
+  }
+  .item-section-body .date-input-area {
+    width: 160px;
+  }
+  .item-section-table-section {
+    overflow-x: auto;
+  }
+
+  .duration-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .duration-area label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .duration-area h2 {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .invoice-top-title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invoice-top-title h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+  }
+  .button {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .button button {
+    font-size: 12px;
+  }
+}
