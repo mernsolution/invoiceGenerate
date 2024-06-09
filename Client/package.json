@@ -2,7 +2,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "proxy": "https://invoice0.mernsolution.com/v1",
+  "proxy": "http://localhost:5000/v1",
   "type": "module",
   "scripts": {
     "dev": "vite",
