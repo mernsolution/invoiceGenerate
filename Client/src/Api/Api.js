@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "https://invoice0.mernsolution.com/v1";
+const BASE_URL = "http://localhost:5000/v1";
 
 export async function getInvoiceData() {
   const URL = BASE_URL + "/getInvoiceData";
